@@ -1,0 +1,31 @@
+.awssld__next {
+    padding-right: 2rem;
+}
+
+.awssld__prev {
+    padding-left: 2rem;
+}
+
+.awssld__controls__arrow-right {
+    height: 1.5rem;
+}
+
+.awssld__controls__arrow-left {
+    height: 1.5rem;
+}
+
+.awssld__controls__arrow-left::before {
+    background-color: gainsboro;
+}
+
+.awssld__controls__arrow-left::after {
+    background-color: gainsboro;
+}
+
+.awssld__controls__arrow-right::before {
+    background-color: gainsboro;
+}
+
+.awssld__controls__arrow-right::after {
+    background-color: gainsboro;
+}
