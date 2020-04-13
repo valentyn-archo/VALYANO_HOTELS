@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import logo from '../../images/roomLogo.png';
-import { GoThreeBars as Hamburger } from "react-icons/go";
-import { Link } from 'react-router-dom';
+import {GoThreeBars as Hamburger} from "react-icons/go";
+import {Link} from 'react-router-dom';
 
 export default class Navbar extends Component {
     state = {

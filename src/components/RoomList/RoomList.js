@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Room from '../Room/Room';
 
-export default function RoomsList({ rooms }) {
+export default function RoomsList({rooms}) {
 
     if (rooms.length === 0) {
         return (

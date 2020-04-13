@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import RoomFilter from '../RoomFilter/RoomFilter';
 import RoomList from '../RoomList/RoomList';
@@ -7,7 +8,7 @@ import MyMap from '../Map/Map';
 import Title from '../Title/Title';
 
 
-function RoomContainer({ context }) {
+function RoomContainer({context}) {
     const {loading, sortedRooms, rooms} = context;
 
     if (loading) {
@@ -25,7 +26,6 @@ function RoomContainer({ context }) {
             </wrapper>
         </>
     );
-};
-
+}
 
 export default withRoomConsumer(RoomContainer);

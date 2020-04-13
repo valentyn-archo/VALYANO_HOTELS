@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import defaultBcg from '../images/room-1.jpeg';
 import Banner from '../components/Banner/Banner';
@@ -18,10 +19,6 @@ export default class SingleRoom extends Component {
     }
 
     static contextType = RoomContext;
-
-    // componentDidMount() {
-
-    // }
 
     render() {
         const { getRoom } = this.context;

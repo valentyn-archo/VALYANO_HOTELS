@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, {useState, useContext} from 'react';
 import {RoomContext} from '../../context/context';
 import {GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow} from 'react-google-maps';
@@ -59,7 +60,7 @@ function Map() {
             }
         </GoogleMap >
     )
-};
+}
 
 function SingleMap() {
 
@@ -76,13 +77,13 @@ function SingleMap() {
             <Marker position={currentCoords} />
         </GoogleMap>
     )
-};
+}
 
 const WrappedMap = withScriptjs(withGoogleMap(Map))
 
 const SingleWrappedMap = withScriptjs(withGoogleMap(SingleMap))
 
-export default function MyMap({ rooms }) {
+export default function MyMap({rooms}) {
     console.log(rooms);
     return (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -95,9 +96,9 @@ export default function MyMap({ rooms }) {
             </div>
         </div>
     )
-};
+}
 
-export function MySingleMap({ room }) {
+export function MySingleMap({room}) {
     MyCurrentRoom = room;
     return (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>

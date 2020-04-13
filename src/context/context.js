@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, {Component} from 'react';
 import items from '../data';
 
@@ -50,8 +51,8 @@ class RoomProvider extends Component {
         });
 
         return tempItems;
-    };
-
+    }
+    
     getRoom = (slug) => {
         let tempRooms = [...this.state.rooms];
         const room = tempRooms.find(room => room.slug === slug);
@@ -92,12 +93,12 @@ class RoomProvider extends Component {
         // filter by type
         if (type !== 'all') {
             tempRooms = tempRooms.filter(room => room.type === type)
-        };
+        }
 
         // filter by capacity
         if (capacity !== 1) {
             tempRooms = tempRooms.filter(room => room.capacity >= capacity)
-        };
+        }
 
         // filter by price
         tempRooms = tempRooms.filter(room => room.price <= price);
@@ -131,8 +132,8 @@ class RoomProvider extends Component {
                 {this.props.children}
             </RoomContext.Provider>
         )
-    };
-};
+    }
+}
 
 
 const RoomConsumer = RoomContext.Consumer;

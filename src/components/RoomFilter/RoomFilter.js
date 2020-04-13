@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import {useContext} from 'react';
 import {RoomContext} from '../../context/context';
@@ -7,7 +8,7 @@ const getUnique = (items, value) => {
     return [...new Set(items.map(item => item[value]))]
 }
 
-export default function RoomFilter({ rooms }) {
+export default function RoomFilter({rooms}) {
     const context = useContext(RoomContext);
     const {
         handleChange,

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import {FaCocktail, FaHiking, FaShuttleVan, FaBeer} from 'react-icons/fa';
 import Title from '../Title/Title';
 
 export default class Services extends Component {
@@ -28,6 +28,7 @@ export default class Services extends Component {
             }
         ]
     }
+
     render() {
         return (
             <section className="services">
