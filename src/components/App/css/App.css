@@ -9,7 +9,7 @@
 }
 
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: rgba(38, 51, 51, 0.8);
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -64,17 +64,18 @@ h6 {
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
-  background: var(--primaryColor);
+  background: rgba(38, 51, 51, 0.8);
   padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColor);
+  border: 3px solid rgba(38, 51, 51, 0.1);
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 500;
 }
 .btn-primary:hover {
+  border: 3px solid rgba(38, 51, 51, 0.8);
   background: transparent;
-  color: var(--primaryColor);
+  color: #222;
 }
 .loading {
   text-transform: capitalize;
@@ -102,7 +103,7 @@ h6 {
   width: 100%;
   padding: 0.75rem 2rem;
   background: var(--mainWhite);
-  z-index: 1;
+  z-index: 100000;
 }
 .nav-header {
   display: flex;
@@ -323,17 +324,31 @@ h6 {
 
 .img-container {
   position: relative;
+  z-index: 1;
 }
 .img-container img {
   width: 100%;
+  min-height: 162px;
   display: block;
   transition: var(--mainTransition);
 }
+
+.single-img-container {
+  position: relative;
+  z-index: 1;
+}
+.single-img-container img {
+  width: 100%;
+  min-height: 162px;
+  display: block;
+  transition: var(--mainTransition);
+}
+
 .price-top {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(38, 51, 51, 0.8);
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
   border-bottom-right-radius: 1rem;
@@ -354,22 +369,39 @@ h6 {
   transform: scale(0);
   transition: all 0.13s linear;
 }
+
 .img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
 }
+
 .img-container:hover img {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .img-container:hover .price-top {
   opacity: 0;
 }
+
 .img-container:hover .room-link {
   transform: translate(-50%, -50%) scale(1);
 }
+
+.single-img-container:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.single-img-container:hover img {
+  opacity: 0.8;
+}
+.single-img-container:hover .price-top {
+  opacity: 0;
+}
+.single-img-container:hover .room-link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .room-info {
   background: var(--mainWhite);
   text-transform: capitalize;
-  padding: 0.55rem 0;
+  padding: 1.0rem 0 1.5rem 0;
   text-align: center;
   font-weight: 700;
   font-size: large;
@@ -470,15 +502,8 @@ h6 {
   grid-column-gap: 30px;
 }
 
-@media screen and (min-width: 776px) {
-  .roomslist-center {
-    /* width: 90vw; */
-  /* grid-template-columns: repeat(1, minmax(270px, 1fr)); */
-  }
-}
 @media screen and (min-width: 992px) {
   .roomslist-center {
-    /* width: 95vw; */
     max-width: 1170px;
   }
 }
@@ -528,11 +553,7 @@ h6 {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
-@media screen and (min-width: 776px) {
-  .filter-form {
-    /* width: 70vw; */
-  }
-}
+
 @media screen and (min-width: 992px) {
   .filter-form {
     /* width: 95vw; */
@@ -630,6 +651,11 @@ h6 {
   display: grid;
   grid-template-columns: 20% 40% 40%;
   padding: 0px 10px;
+}
+
+#scroll-to-top button {
+    outline: none;
+    border: none;
 }
 
 @media only screen

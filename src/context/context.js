@@ -42,7 +42,7 @@ class RoomProvider extends Component {
   formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id;
-      let images = item.fields.images.map((images) => images.fields.file.url);
+      let images = item.fields.images;
       let coordinates = item.coordinates;
       let room = { ...item.fields, images, id, coordinates };
 

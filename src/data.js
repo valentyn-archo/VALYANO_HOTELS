@@ -43,33 +43,18 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img1,
-            },
-          },
+          url: img1,
         },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
-        },
+        // },
+        // {
+        //     url: room2
+        // },
+        // {
+        //     url: room3
+        // },
+        // {
+        //     url: room4
+        // }
       ],
     },
     coordinates: [30.2514, -97.74938],
@@ -101,32 +86,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img2,
-            },
-          },
+          url: img2,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -159,32 +128,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img3,
-            },
-          },
+          url: img3,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -217,32 +170,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img4,
-            },
-          },
+          url: img4,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -275,32 +212,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img5,
-            },
-          },
+          url: img5,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -333,32 +254,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img6,
-            },
-          },
+          url: img6,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -391,32 +296,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img7,
-            },
-          },
+          url: img7,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -449,32 +338,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img8,
-            },
-          },
+          url: img8,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -507,32 +380,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img9,
-            },
-          },
+          url: img9,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -565,32 +422,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img10,
-            },
-          },
+          url: img10,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -623,32 +464,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img11,
-            },
-          },
+          url: img11,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -681,32 +506,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: img12,
-            },
-          },
+          url: img12,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
@@ -739,32 +548,16 @@ export default [
       ],
       images: [
         {
-          fields: {
-            file: {
-              url: room1,
-            },
-          },
+          url: room1,
         },
         {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
+          url: room2,
         },
         {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
+          url: room3,
         },
         {
-          fields: {
-            file: {
-              url: room4,
-            },
-          },
+          url: room4,
         },
       ],
     },
