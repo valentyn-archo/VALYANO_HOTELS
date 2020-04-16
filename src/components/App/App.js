@@ -5,6 +5,7 @@ import Home from "../../pages/Home";
 import Rooms from "../../pages/Rooms";
 import SingleRoom from "../../pages/SingleRoom";
 import Error from "../../pages/Error";
+import ScrollTop from "im";
 
 import "./css/App.css";
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
+      <ScrollTop className="scroll-btn" />
     </>
   );
 };
