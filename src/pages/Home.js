@@ -1,25 +1,27 @@
-import React from "react";
-import Hero from "../components/Hero/Hero";
-import Banner from "../components/Banner/Banner";
-import { Link } from "react-router-dom";
-import Services from "../components/Services/Services";
-import FeaturedRooms from "../components/FeaturedRooms/FeaturedRooms";
+import React, {Fragment} from 'react';
+import {Link} from 'react-router-dom';
+import MainInfoContainer from '../components/MainInfoContainer/MainInfoContainer';
+import Banner from '../components/Banner/Banner';
+import Services from '../components/Services/Services';
+import FeaturedRooms from '../components/FeaturedRooms/FeaturedRooms';
 
-export default function Home() {
-  return (
-    <>
-      <Hero>
-        <Banner
-          title="luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
-        >
-          <Link to="/rooms" className="btn-primary">
-            view rooms
-          </Link>
-        </Banner>
-      </Hero>
-      <Services />
-      <FeaturedRooms />
-    </>
-  );
-}
+const Home = () => {
+    return (
+        <Fragment>
+            <MainInfoContainer>
+                <Banner
+                    title="VALYANO HOTEL"
+                    subtitle="very comfortable rooms for a good price"
+                >
+                    <Link to="/rooms" className="btn-primary">
+                        view rooms
+                    </Link>
+                </Banner>
+            </MainInfoContainer>
+            <Services />
+            <FeaturedRooms />
+        </Fragment>
+    );
+};
+
+export default Home;
