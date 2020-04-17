@@ -10,10 +10,10 @@ import defaultImg from '../../images/room-1.jpeg';
 import './Room.scss';
 
 const Room = ({room}) => {
-    const {name, slug, images, price, id} = room;
+    const {name, slug, images, price} = room;
 
     return (
-        <article className="room" key={id}>
+        <article className="room">
             {images.length === 1 ? (
                 <div className="single-img-container">
                     <img src={images.url || defaultImg} alt="room option" />
@@ -36,9 +36,9 @@ const Room = ({room}) => {
                         bullets={false}
                         className="aws-btn"
                     >
-                        {images.map((image) => {
+                        {images.map((image, index) => {
                             return (
-                                <div key={image.id} data-src={image.url}>
+                                <div key={index} data-src={image.url}>
                                     <div className="price-top">
                                         <h6>${price}</h6>
                                         <p>per night</p>
