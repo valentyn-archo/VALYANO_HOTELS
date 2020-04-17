@@ -1,17 +1,19 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import AwesomeSlider from 'react-awesome-slider';
 import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
 import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
+
 import defaultImg from '../../images/room-1.jpeg';
-import {Link} from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 import './Room.scss';
 
-export default function Room({room}) {
-    const {name, slug, images, price} = room;
+const Room = ({room}) => {
+    const {name, slug, images, price, id} = room;
+
     return (
-        <article className="room">
+        <article className="room" key={id}>
             {images.length === 1 ? (
                 <div className="single-img-container">
                     <img src={images.url || defaultImg} alt="room option" />
@@ -56,13 +58,15 @@ export default function Room({room}) {
             <p className="room-info">{name}</p>
         </article>
     );
-}
+};
 
 Room.propTypes = {
     room: PropTypes.shape({
         name: PropTypes.string.isRequired,
         slug: PropTypes.string.isRequired,
-        images: PropTypes.arrayOf(PropTypes.string).isRequired,
-        price: PropTypes.number.isRequired,
-    }),
+        images: PropTypes.arrayOf(PropTypes.object).isRequired,
+        price: PropTypes.number.isRequired
+    })
 };
+
+export default Room;

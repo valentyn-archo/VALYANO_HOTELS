@@ -18,7 +18,7 @@ import img12 from './images/room-12.jpeg';
 export default [
     {
         sys: {
-            id: '1',
+            id: '1'
         },
         fields: {
             name: 'single economy',
@@ -39,29 +39,19 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img1,
-                },
-                // },
-                // {
-                //     url: room2
-                // },
-                // {
-                //     url: room3
-                // },
-                // {
-                //     url: room4
-                // }
-            ],
+                    url: img1
+                }
+            ]
         },
-        coordinates: [30.2514, -97.74938],
+        coordinates: [30.2514, -97.74938]
     },
     {
         sys: {
-            id: '2',
+            id: '2'
         },
         fields: {
             name: 'single basic',
@@ -82,28 +72,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img2,
+                    url: img2
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.247366, -97.750114],
+        coordinates: [30.247366, -97.750114]
     },
     {
         sys: {
-            id: '3',
+            id: '3'
         },
         fields: {
             name: 'single standard',
@@ -124,28 +114,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img3,
+                    url: img3
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.26113, -97.78666],
+        coordinates: [30.26113, -97.78666]
     },
     {
         sys: {
-            id: '4',
+            id: '4'
         },
         fields: {
             name: 'single deluxe',
@@ -166,28 +156,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img4,
+                    url: img4
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.23565, -97.74064],
+        coordinates: [30.23565, -97.74064]
     },
     {
         sys: {
-            id: '5',
+            id: '5'
         },
         fields: {
             name: 'double economy',
@@ -208,28 +198,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img5,
+                    url: img5
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.26582, -97.746887],
+        coordinates: [30.26582, -97.746887]
     },
     {
         sys: {
-            id: '6',
+            id: '6'
         },
         fields: {
             name: 'double basic',
@@ -250,28 +240,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img6,
+                    url: img6
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2627887, -97.7439651],
+        coordinates: [30.2627887, -97.7439651]
     },
     {
         sys: {
-            id: '7',
+            id: '7'
         },
         fields: {
             name: 'double standard',
@@ -292,28 +282,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img7,
+                    url: img7
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2641566, -97.7320762],
+        coordinates: [30.2641566, -97.7320762]
     },
     {
         sys: {
-            id: '8',
+            id: '8'
         },
         fields: {
             name: 'double deluxe',
@@ -334,28 +324,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img8,
+                    url: img8
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2623336, -97.7255678],
+        coordinates: [30.2623336, -97.7255678]
     },
     {
         sys: {
-            id: '9',
+            id: '9'
         },
         fields: {
             name: 'family economy',
@@ -376,28 +366,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img9,
+                    url: img9
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2686243, -97.7283865],
+        coordinates: [30.2686243, -97.7283865]
     },
     {
         sys: {
-            id: '10',
+            id: '10'
         },
         fields: {
             name: 'family basic',
@@ -418,28 +408,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img10,
+                    url: img10
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2685716, -97.7401982],
+        coordinates: [30.2685716, -97.7401982]
     },
     {
         sys: {
-            id: '11',
+            id: '11'
         },
         fields: {
             name: 'family standard',
@@ -460,28 +450,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img11,
+                    url: img11
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2585669, -97.7469125],
+        coordinates: [30.2585669, -97.7469125]
     },
     {
         sys: {
-            id: '12',
+            id: '12'
         },
         fields: {
             name: 'family deluxe',
@@ -502,28 +492,28 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: img12,
+                    url: img12
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2569405, -97.7500934],
+        coordinates: [30.2569405, -97.7500934]
     },
     {
         sys: {
-            id: '13',
+            id: '13'
         },
         fields: {
             name: 'presidential',
@@ -544,23 +534,23 @@ export default [
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
-                'Comfortable beds',
+                'Comfortable beds'
             ],
             images: [
                 {
-                    url: room1,
+                    url: room1
                 },
                 {
-                    url: room2,
+                    url: room2
                 },
                 {
-                    url: room3,
+                    url: room3
                 },
                 {
-                    url: room4,
-                },
-            ],
+                    url: room4
+                }
+            ]
         },
-        coordinates: [30.2815783, -97.7402171],
-    },
+        coordinates: [30.2815783, -97.7402171]
+    }
 ];

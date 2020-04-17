@@ -5,7 +5,7 @@ import {
     withScriptjs,
     withGoogleMap,
     Marker,
-    InfoWindow,
+    InfoWindow
 } from 'react-google-maps';
 import {Link} from 'react-router-dom';
 
@@ -28,7 +28,7 @@ function Map() {
                         key={index}
                         position={{
                             lat: room.coordinates[0],
-                            lng: room.coordinates[1],
+                            lng: room.coordinates[1]
                         }}
                         onClick={() => {
                             setSelectedRoom(room);
@@ -41,7 +41,7 @@ function Map() {
                 <InfoWindow
                     position={{
                         lat: selectedRoom.coordinates[0],
-                        lng: selectedRoom.coordinates[1],
+                        lng: selectedRoom.coordinates[1]
                     }}
                     onCloseClick={() => {
                         setSelectedRoom(null);
@@ -75,21 +75,19 @@ function Map() {
     );
 }
 
-function SingleMap() {
+const SingleMap = () => {
     let currentCoords = {
         lat: MyCurrentRoom.coordinates[0],
-        lng: MyCurrentRoom.coordinates[1],
+        lng: MyCurrentRoom.coordinates[1]
     };
     return (
         <GoogleMap defaultZoom={13} defaultCenter={currentCoords}>
             <Marker position={currentCoords} />
         </GoogleMap>
     );
-}
+};
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-const SingleWrappedMap = withScriptjs(withGoogleMap(SingleMap));
 
 export default function MyMap() {
     return (
@@ -97,7 +95,7 @@ export default function MyMap() {
             style={{
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center',
+                alignItems: 'center'
             }}
         >
             <div style={{width: '100%', height: '100%'}}>
@@ -112,6 +110,8 @@ export default function MyMap() {
     );
 }
 
+const SingleWrappedMap = withScriptjs(withGoogleMap(SingleMap));
+
 export function MySingleMap({room}) {
     MyCurrentRoom = room;
     return (
@@ -119,7 +119,7 @@ export function MySingleMap({room}) {
             style={{
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center',
+                alignItems: 'center'
             }}
         >
             <div style={{width: '80%', height: '100%'}}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Home from '../../pages/Home';
@@ -11,7 +11,7 @@ import './css/App.css';
 
 const App = () => {
     return (
-        <>
+        <Fragment>
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Home} />
@@ -20,7 +20,7 @@ const App = () => {
                 <Route component={Error} />
             </Switch>
             <ScrollTop className="scroll-btn" />
-        </>
+        </Fragment>
     );
 };
 

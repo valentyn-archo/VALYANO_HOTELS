@@ -1,21 +1,22 @@
-import React from 'react';
-
-import Hero from '../components/Hero/Hero';
-import Banner from '../components/Banner/Banner';
+import React, {Fragment} from 'react';
 import {Link} from 'react-router-dom';
+import MainInfoContainer from '../components/MainInfoContainer/MainInfoContainer';
+import Banner from '../components/Banner/Banner';
 import RoomContainer from '../components/RoomContainer/RoomContainer';
 
-export default function Rooms() {
+const Rooms = () => {
     return (
-        <>
-            <Hero hero="roomsHero">
+        <Fragment>
+            <MainInfoContainer className="roomsHero">
                 <Banner title="our rooms">
                     <Link to="/" className="btn-primary">
                         return home
                     </Link>
                 </Banner>
-            </Hero>
+            </MainInfoContainer>
             <RoomContainer />
-        </>
+        </Fragment>
     );
-}
+};
+
+export default Rooms;

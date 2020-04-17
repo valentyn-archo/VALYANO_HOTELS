@@ -1,16 +1,12 @@
 import React from 'react';
 import Room from '../Room/Room';
 
-export default function RoomsList({rooms}) {
-    if (rooms.length === 0) {
-        return (
-            <div className="empty-search">
-                <h3>unfortunately no rooms matched your search</h3>
-            </div>
-        );
-    }
-
-    return (
+const RoomsList = ({rooms}) => {
+    return rooms.length === 0 ? (
+        <div className="empty-search">
+            <h3>unfortunately no rooms matched your search</h3>
+        </div>
+    ) : (
         <section className="roomslist">
             <div className="roomslist-center">
                 {rooms.map((item) => {
@@ -19,4 +15,6 @@ export default function RoomsList({rooms}) {
             </div>
         </section>
     );
-}
+};
+
+export default RoomsList;

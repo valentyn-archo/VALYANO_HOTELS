@@ -1,13 +1,12 @@
-import React from 'react';
-import {useContext} from 'react';
+import React, {useContext} from 'react';
 import {RoomContext} from '../../context/context';
 import Title from '../Title/Title';
-//get all unique values
+
 const getUnique = (items, value) => {
     return [...new Set(items.map((item) => item[value]))];
 };
 
-export default function RoomFilter({rooms}) {
+const RoomFilter = ({rooms}) => {
     const context = useContext(RoomContext);
     const {
         handleChange,
@@ -19,7 +18,7 @@ export default function RoomFilter({rooms}) {
         minSize,
         maxSize,
         breakfast,
-        pets,
+        pets
     } = context;
 
     // get unique types
@@ -141,4 +140,6 @@ export default function RoomFilter({rooms}) {
             </form>
         </section>
     );
-}
+};
+
+export default RoomFilter;

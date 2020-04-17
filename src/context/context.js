@@ -18,7 +18,7 @@ class RoomProvider extends Component {
         maxSize: 0,
         breakfast: false,
         pets: false,
-        coordinates: [],
+        coordinates: []
     };
 
     // getData
@@ -34,7 +34,7 @@ class RoomProvider extends Component {
             loading: false,
             price: maxPrice,
             maxPrice,
-            maxSize,
+            maxSize
         });
     }
 
@@ -66,7 +66,7 @@ class RoomProvider extends Component {
 
         this.setState(
             {
-                [name]: value,
+                [name]: value
             },
             this.filterRooms
         );
@@ -81,7 +81,7 @@ class RoomProvider extends Component {
             minSize,
             maxSize,
             breakfast,
-            pets,
+            pets
         } = this.state;
 
         // all the rooms
@@ -121,7 +121,7 @@ class RoomProvider extends Component {
 
         // change state
         this.setState({
-            sortedRooms: tempRooms,
+            sortedRooms: tempRooms
         });
     };
 
@@ -131,7 +131,7 @@ class RoomProvider extends Component {
                 value={{
                     ...this.state,
                     getRoom: this.getRoom,
-                    handleChange: this.handlechange,
+                    handleChange: this.handlechange
                 }}
             >
                 {this.props.children}

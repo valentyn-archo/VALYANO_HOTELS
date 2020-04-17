@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import RoomFilter from '../RoomFilter/RoomFilter';
 import RoomList from '../RoomList/RoomList';
 import {withRoomConsumer} from '../../context/context';
@@ -6,24 +6,23 @@ import Loading from '../Loading/Loading';
 import MyMap from '../Map/Map';
 import Title from '../Title/Title';
 
-function RoomContainer({context}) {
+const RoomContainer = ({context}) => {
     const {loading, sortedRooms, rooms} = context;
 
-    if (loading) {
-        return <Loading />;
-    }
-    return (
-        <>
+    return loading ? (
+        <Loading />
+    ) : (
+        <Fragment>
             <div style={{marginTop: '40px'}}>
                 <Title title="search rooms" />
             </div>
-            <wrapper id="roomsWrapper">
+            <div id="roomsWrapper">
                 <RoomFilter rooms={rooms} />
                 <RoomList rooms={sortedRooms} />
                 <MyMap rooms={rooms} />
-            </wrapper>
-        </>
+            </div>
+        </Fragment>
     );
-}
+};
 
 export default withRoomConsumer(RoomContainer);

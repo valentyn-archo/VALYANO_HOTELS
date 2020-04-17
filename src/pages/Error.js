@@ -1,17 +1,18 @@
 import React from 'react';
-
-import Hero from '../components/Hero/Hero';
-import Banner from '../components/Banner/Banner';
 import {Link} from 'react-router-dom';
+import MainInfoContainer from '../components/MainInfoContainer/MainInfoContainer';
+import Banner from '../components/Banner/Banner';
 
-export default function Error() {
+const Error = () => {
     return (
-        <Hero>
+        <MainInfoContainer>
             <Banner title="404" subtitle="Page Not Found">
                 <Link to="/" className="btn-primary">
                     Return Home
                 </Link>
             </Banner>
-        </Hero>
+        </MainInfoContainer>
     );
-}
+};
+
+export default Error;
