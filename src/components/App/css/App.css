@@ -164,20 +164,12 @@ h6 {
   }
 }
 /* end of navbar */
-/* Hero */
-.defaultHero,
+
 .roomsHero {
-  min-height: calc(100vh - 66px);
-  background: url("../../../images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.roomsHero {
-  background-image: url("../../../images/ourRooms.jpeg");
-  min-height: 60vh;
-}
-/* End of Hero */
 /* Banner */
 .banner {
   display: inline-block;
@@ -194,7 +186,7 @@ h6 {
   font-size: 1.5rem;
 }
 .banner div {
-  width: 10rem;
+  width: 22rem;
   height: 5px;
   background: var(--primaryColor);
   margin: 1.7rem auto;

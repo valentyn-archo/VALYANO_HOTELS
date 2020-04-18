@@ -1,0 +1,17 @@
+.aws-btn-main {
+    --slider-height-percentage: 40%;
+    --slider-transition-duration: 1000ms;
+    --control-button-width: 15%;
+    --control-button-height: 25%;
+    --control-button-background: transparent;
+    --loader-bar-color: transparent;
+    --loader-bar-height: 1px;
+}
+
+.main-container .defaultContainer {
+    transform: translate(0, 0) scale(1);
+}
+
+.main-container .roomsHero {
+    transform: translate(0, 0) scale(1);
+}
