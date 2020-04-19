@@ -50,7 +50,7 @@ function Map() {
                     <article className="info-room">
                         <div className="info-img-container">
                             <img
-                                src={selectedRoom.images[0]}
+                                src={selectedRoom.images[0].url}
                                 alt="room option"
                                 className="info-image"
                             />
@@ -122,7 +122,7 @@ export function MySingleMap({room}) {
                 alignItems: 'center'
             }}
         >
-            <div style={{width: '80%', height: '100%'}}>
+            <div id="single-map">
                 <SingleWrappedMap
                     googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCCoZpMrGdo6v9g9roPbPqhAJW1FyEBSSs`}
                     loadingElement={<div style={{height: `100%`}} />}

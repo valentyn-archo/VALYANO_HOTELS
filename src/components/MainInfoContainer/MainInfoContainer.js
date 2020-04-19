@@ -16,7 +16,7 @@ const images = [mainImage1, mainImage2, mainImage3];
 
 const MainInfoContainer = ({children, className = 'defaultContainer'}) => {
     return (
-        <div className="main-container">
+        <div id="main-container">
             <AutoplaySlider
                 play={true}
                 cancelOnInteraction={false} // should stop playing on user interaction

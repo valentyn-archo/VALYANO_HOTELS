@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
 import Home from '../../pages/Home';
 import Rooms from '../../pages/Rooms';
 import SingleRoom from '../../pages/SingleRoom';
@@ -12,7 +11,6 @@ import './css/App.css';
 const App = () => {
     return (
         <Fragment>
-            <Navbar />
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/rooms/" component={Rooms} />

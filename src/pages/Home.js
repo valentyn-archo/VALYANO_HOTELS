@@ -4,10 +4,12 @@ import MainInfoContainer from '../components/MainInfoContainer/MainInfoContainer
 import Banner from '../components/Banner/Banner';
 import Services from '../components/Services/Services';
 import FeaturedRooms from '../components/FeaturedRooms/FeaturedRooms';
+import Navbar from '../components/Navbar/Navbar';
 
 const Home = () => {
     return (
         <Fragment>
+            <Navbar isHome />
             <MainInfoContainer>
                 <Banner
                     title="VALYANO HOTEL"

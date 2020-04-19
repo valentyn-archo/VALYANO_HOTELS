@@ -230,12 +230,14 @@ h6 {
   background: var(--primaryColor);
 }
 /* end of Title */
-
+#rooms-container {
+  margin-top: 40px;
+}
 /* services */
-.services {
+#services {
   padding: 5rem 0;
 }
-.services {
+#services {
   background: #eeeeee;
   text-align: center;
   color: var(--mainBlack);
@@ -254,14 +256,20 @@ h6 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
-.services h6 {
+#services h6 {
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
 }
-.services p {
+#services p {
   width: 80%;
   margin: 0 auto;
 }
+
+#single-map {
+  width: 80%; 
+  height: 100%;
+}
+
 @media screen and (min-width: 992px) {
   .services-center {
     width: 95vw;
@@ -270,7 +278,7 @@ h6 {
 }
 
 @media screen and (min-width: 1200px) {
-  .services p {
+  #services p {
     width: 100%;
   }
 }
@@ -407,7 +415,7 @@ h6 {
 /* end of room  */
 /* single room*/
 
-.single-room {
+#single-room {
   padding: 5rem 0 0 0;
 }
 .single-room-images {
