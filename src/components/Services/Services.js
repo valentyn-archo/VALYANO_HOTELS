@@ -8,25 +8,25 @@ const Services = () => {
             icon: <FaCocktail />,
             title: 'Free Cocktails',
             info:
-                'All guests enjoy complimentary drinks and snacks at our nightly Evening Reception. Guests can choose from a variety of alcoholic and nonalcoholic beverages, along with light appetizers.'
+                'All guests enjoy complimentary drinks and snacks at our nightly evening bars and clubs, if you are client of the VALYANO. Guests can choose from a variety of alcoholic and nonalcoholic beverages, along with light appetizers.'
         },
         {
             icon: <FaHiking />,
             title: 'Endless Hiking',
             info:
-                'Unforgettable impressions and beautiful scenery await you. These are all reasonably priced.'
+                'Weekly trips to mountains and lakes with incredible discounts. Unforgettable impressions and beautiful scenery await you. We have the best guides and routes.'
         },
         {
             icon: <FaShuttleVan />,
             title: 'Free Shuttle',
             info:
-                'Our hotel offers you free shuttle from the airport as well as to our beautiful central city.'
+                'Our company offers you free shuttle from the airport to our appartments, as well as to our beautiful central city. For a small fee you can also travel where you need within the city.'
         },
         {
             icon: <FaBeer />,
             title: 'Local Craft Beer',
             info:
-                'VALYANO hotel produces exquisite and delicious craft beer. You will be very pleased when you try it.'
+                'Bars and clubs collaborating with VALYANO company produces exquisite and delicious craft beer. We produce dark and light beer of varying degrees of fermentation with many interesting flavours.'
         }
     ];
 

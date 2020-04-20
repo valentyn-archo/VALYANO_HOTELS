@@ -13,7 +13,7 @@ const Home = () => {
             <MainInfoContainer>
                 <Banner
                     title="VALYANO HOTEL"
-                    subtitle="very comfortable rooms for a good price"
+                    subtitle="very comfortable appartments for a good price"
                 >
                     <Link to="/rooms" className="btn-primary">
                         view rooms

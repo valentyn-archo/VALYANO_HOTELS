@@ -41,6 +41,9 @@ const Navbar = ({isHome, isRooms, isSingleRoom}) => {
                         <li>
                             <Link to="/rooms">Rooms</Link>
                         </li>
+                        <li>
+                            <a href="#featured-rooms">Featured</a>
+                        </li>
                     </ul>
                 )}
                 {isRooms && (
