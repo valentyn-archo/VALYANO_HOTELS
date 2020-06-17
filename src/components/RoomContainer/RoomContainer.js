@@ -13,7 +13,7 @@ const RoomContainer = ({context}) => {
         <Loading />
     ) : (
         <Fragment>
-            <div style={{marginTop: '40px'}}>
+            <div id="rooms-container">
                 <Title title="search rooms" />
             </div>
             <div id="roomsWrapper">

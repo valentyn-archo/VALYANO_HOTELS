@@ -4,6 +4,7 @@ import Banner from '../components/Banner/Banner';
 import {RoomContext} from '../context/context';
 import MainInfoContainer from '../components/MainInfoContainer/MainInfoContainer';
 import {MySingleMap} from '../components/Map/Map';
+import Navbar from '../components/Navbar/Navbar';
 
 const SingleRoom = (props) => {
     const context = useContext(RoomContext);
@@ -38,6 +39,7 @@ const SingleRoom = (props) => {
 
     return (
         <Fragment>
+            <Navbar isSingleRoom />
             <MainInfoContainer>
                 <Banner title={`${name} room`}>
                     <Link to="/rooms" className="btn-primary">
@@ -45,7 +47,7 @@ const SingleRoom = (props) => {
                     </Link>
                 </Banner>
             </MainInfoContainer>
-            <section className="single-room">
+            <section id="single-room">
                 <div className="single-room-images">
                     {defaultImg.map((item, index) => {
                         return <img key={index} src={item.url} alt={name} />;
