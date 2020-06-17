@@ -35,7 +35,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -68,7 +68,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -110,7 +110,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -152,7 +152,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -194,7 +194,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -236,7 +236,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -278,7 +278,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -320,7 +320,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -362,7 +362,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -404,7 +404,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -446,7 +446,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -488,7 +488,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
@@ -530,7 +530,7 @@ export default [
             extras: [
                 'Plush pillows and breathable bed linens',
                 'Soft, oversized bath towels',
-                'Full-sized, pH-balanced toiletries',
+                'Full-sized, very comfortable toilets',
                 'Complimentary refreshments',
                 'Adequate safety/security',
                 'Internet',
