@@ -1,6 +1,6 @@
-# VALYANO Hotel
+# VALYANO Project
 
-A booking application, when someone can book the room in the hotel.
+An application created, as a diplom work for university. Here you can find the appartments.
 
 ## Getting Started
 
