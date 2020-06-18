@@ -9,7 +9,7 @@ const Images = db.define('images', {
         allowNull: false,
         autoIncrement: true
     },
-    img: {
+    url: {
         type: Sequelize.STRING
     },
     appartment_id: {
