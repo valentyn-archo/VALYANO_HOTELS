@@ -1,6 +1,6 @@
 # VALYANO Hotel
 
-A booking application, when someone can book the room in the hotel.
+A booking application, when someone can book the appartments.
 
 ## Getting Started
 
