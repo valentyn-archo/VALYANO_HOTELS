@@ -136,7 +136,7 @@ export default function MyMap() {
         >
             <div style={{width: '100%', height: '100%'}}>
                 <WrappedMap
-                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCCoZpMrGdo6v9g9roPbPqhAJW1FyEBSSs`}
+                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB0KhffiMteHVLTmx5bdgG4_m2gI5YAFgw`} // https://toolset.com/forums/topic/map-plugin-always-generates-geocoding-api-4xx-errors-unable-to-find-debug-info/
                     loadingElement={<div style={{height: `100%`}} />}
                     containerElement={<div className="mapContainer" />}
                     mapElement={<div style={{height: `100%`}} />}
@@ -160,7 +160,7 @@ export function MySingleMap({room}) {
         >
             <div id="single-map">
                 <SingleWrappedMap
-                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCCoZpMrGdo6v9g9roPbPqhAJW1FyEBSSs`}
+                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB0KhffiMteHVLTmx5bdgG4_m2gI5YAFgw`} // https://toolset.com/forums/topic/map-plugin-always-generates-geocoding-api-4xx-errors-unable-to-find-debug-info/
                     loadingElement={<div style={{height: `100%`}} />}
                     containerElement={
                         <div
