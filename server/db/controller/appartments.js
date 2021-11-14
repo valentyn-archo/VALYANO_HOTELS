@@ -7,34 +7,38 @@ const Coordinates = require('../model/coordinates');
 
 router.get('/appartments', (req, res) =>
     Appartments.findAll()
-        .then(appartments => {
-            res.json(appartments)
+        .then((appartments) => {
+            res.json(appartments);
             // res.sendStatus(200);
         })
-        .catch(err => console.log(err)));
+        .catch((err) => console.log(err))
+);
 
 router.get('/images', (req, res) =>
     Images.findAll()
-        .then(images => {
-            res.json(images)
+        .then((images) => {
+            res.json(images);
             // res.sendStatus(200);
         })
-        .catch(err => console.log(err)));
+        .catch((err) => console.log(err))
+);
 
 router.get('/extras', (req, res) =>
     Extras.findAll()
-        .then(extras => {
-            res.json(extras)
+        .then((extras) => {
+            res.json(extras);
             // res.sendStatus(200);
         })
-        .catch(err => console.log(err)));
+        .catch((err) => console.log(err))
+);
 
 router.get('/coordinates', (req, res) =>
     Coordinates.findAll()
-        .then(coordinates => {
-            res.json(coordinates)
+        .then((coordinates) => {
+            res.json(coordinates);
             // res.sendStatus(200);
         })
-        .catch(err => console.log(err)));
+        .catch((err) => console.log(err))
+);
 
 module.exports = router;
