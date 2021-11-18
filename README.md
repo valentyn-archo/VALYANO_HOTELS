@@ -1,6 +1,6 @@
 # VALYANO Project
 
-An application created, as a diplom work for university. Here you can find the appartments.
+An application created, as a diplom work for university. Here you can find the apartments.
 
 ## Getting Started
 

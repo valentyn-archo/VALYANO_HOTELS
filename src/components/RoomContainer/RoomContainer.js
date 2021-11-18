@@ -14,7 +14,7 @@ const RoomContainer = ({context}) => {
     ) : (
         <Fragment>
             <div id="rooms-container">
-                <Title title="search rooms" />
+                <Title title="search apartments" />
             </div>
             <div id="roomsWrapper">
                 <RoomFilter rooms={rooms} />

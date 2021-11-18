@@ -15,3 +15,24 @@
 #main-container .roomsHero {
     transform: translate(0, 0) scale(1);
 }
+
+@media only screen and (max-width: 600px) {
+    #main-container .banner {
+        height: 180px;
+        padding: 2.8rem 0;
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../../images/main-image-2.gif);
+        background-position: right;
+
+        h1 {
+            color:whitesmoke;
+        }
+
+        p {
+            display: none;
+        }
+
+        div {
+            height: 0;
+        }
+    }
+}
