@@ -213,6 +213,14 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner div {
+    width: auto;
+  }
+
   #rooms-container {
     display: none;
   }
