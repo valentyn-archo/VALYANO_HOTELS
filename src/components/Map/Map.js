@@ -12,8 +12,6 @@ import AwesomeSlider from 'react-awesome-slider';
 import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
 import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
 
-import defaultImg from '../../images/room-1.jpeg';
-
 let MyCurrentRoom = {};
 
 function Map() {
@@ -32,8 +30,8 @@ function Map() {
                     <Marker
                         key={index}
                         position={{
-                            lat: room.coordinates[0],
-                            lng: room.coordinates[1]
+                            lat: room.coordinates.lat,
+                            lng: room.coordinates.lng
                         }}
                         onClick={() => {
                             setSelectedRoom(room);
@@ -45,8 +43,8 @@ function Map() {
             {selectedRoom && (
                 <InfoWindow
                     position={{
-                        lat: selectedRoom.coordinates[0],
-                        lng: selectedRoom.coordinates[1]
+                        lat: selectedRoom.coordinates.lat,
+                        lng: selectedRoom.coordinates.lng
                     }}
                     onCloseClick={() => {
                         setSelectedRoom(null);
@@ -56,7 +54,7 @@ function Map() {
                         {selectedRoom.images.length === 1 ? (
                             <div className="info-img-container">
                                 <img
-                                    src={selectedRoom.images.url || defaultImg}
+                                    src={selectedRoom.images[0].url}
                                     alt="room option"
                                     className="single-info-image"
                                 />
@@ -113,8 +111,8 @@ function Map() {
 
 const SingleMap = () => {
     let currentCoords = {
-        lat: MyCurrentRoom.coordinates[0],
-        lng: MyCurrentRoom.coordinates[1]
+        lat: MyCurrentRoom.coordinates.lat,
+        lng: MyCurrentRoom.coordinates.lng
     };
     return (
         <GoogleMap defaultZoom={13} defaultCenter={currentCoords}>

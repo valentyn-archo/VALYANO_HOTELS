@@ -5,8 +5,6 @@ import AwesomeSlider from 'react-awesome-slider';
 import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
 import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
 
-import defaultImg from '../../images/room-1.jpeg';
-
 import './Room.scss';
 
 const Room = ({room}) => {
@@ -16,7 +14,7 @@ const Room = ({room}) => {
         <article className="room">
             {images.length === 1 ? (
                 <div className="single-img-container">
-                    <img src={images.url || defaultImg} alt="room option" />
+                    <img src={images[0].url} alt="room option" />
                     <div className="price-top">
                         <h6>${price}</h6>
                         <p>per night</p>

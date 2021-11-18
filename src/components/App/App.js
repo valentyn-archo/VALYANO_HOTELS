@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react';
 import {Route, Switch} from 'react-router-dom';
+import ScrollTop from 'im';
 import Home from '../../pages/Home';
 import Rooms from '../../pages/Rooms';
 import SingleRoom from '../../pages/SingleRoom';
 import Error from '../../pages/Error';
-import ScrollTop from 'im';
 
 import './css/App.css';
 

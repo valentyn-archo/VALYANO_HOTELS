@@ -1,30 +1,21 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const db = require('./db/config');
+const {ApolloServer} = require('apollo-server');
+const client = require('./dbConfig/config');
+// const {sequelize} = require('./dbConfig/config');
 
-db.authenticate()
-    .then(() => console.log('Database connected...'))
-    .catch((err) => console.log('Error: ' + err));
+const resolvers = require('./graphql/resolvers');
+const typeDefs = require('./graphql/typeDefs/typeDefs');
 
-const app = express();
+require('dotenv').config();
 
-app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header(
-        'Access-Control-Allow-Headers',
-        'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-    );
-    res.header(
-        'Access-Control-Allow-Methods',
-        'GET, PUT, POST, DELETE, OPTIONS'
-    );
-    next();
+const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    subscriptions: {path: '/'}
 });
 
-app.use(bodyParser.json());
-
-app.use('/api/appartments', require('./db/controller/appartments'));
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+server.listen().then(async ({url}) => {
+    console.log(`🚀 Server ready at ${url}`);
+    await client.connect();
+    console.log('\n-----------------------------------\n');
+    console.log('Connected successfully to mongodb - ✅');
+});
