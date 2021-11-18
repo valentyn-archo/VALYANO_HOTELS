@@ -1,4 +1,5 @@
 const {ApolloServer} = require('apollo-server');
+const client = require('./dbConfig/config');
 // const {sequelize} = require('./dbConfig/config');
 
 const resolvers = require('./graphql/resolvers');
@@ -12,11 +13,9 @@ const server = new ApolloServer({
     subscriptions: {path: '/'}
 });
 
-server.listen().then(({url}) => {
+server.listen().then(async ({url}) => {
     console.log(`🚀 Server ready at ${url}`);
-
-    // sequelize
-    //     .authenticate()
-    //     .then(() => console.log('Database connected!!'))
-    //     .catch((err) => console.log(err));
+    await client.connect();
+    console.log('\n-----------------------------------\n');
+    console.log('Connected successfully to mongodb - ✅');
 });

@@ -23,7 +23,6 @@ class RoomProvider extends Component {
     };
 
     // getData
-    // eslint-disable-next-line react/no-deprecated
     componentDidUpdate(prevProps) {
         const {data} = this.props;
         if (prevProps.data.getApartments !== this.props.data.getApartments) {

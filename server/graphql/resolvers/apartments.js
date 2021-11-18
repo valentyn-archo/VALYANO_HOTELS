@@ -1,19 +1,15 @@
-/* eslint-disable no-unreachable */
-/* eslint-disable no-useless-catch */
-const data = require('../data');
+/* eslint-disable no-unused-vars */
+const client = require('../../dbConfig/config');
 
 module.exports = {
     Query: {
-        getApartments: async (_, __, {apartments}) => {
-            if (process.env.NODE_ENV === 'development') {
-                return data;
-            }
+        getApartments: async (_, __) => {
+            const collection = client
+                .db('valyano_booking')
+                .collection('apartments');
 
-            try {
-                return {apartments};
-            } catch (err) {
-                throw err;
-            }
+            // return data;
+            return await collection.find({}).toArray();
         }
     }
 };

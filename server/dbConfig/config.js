@@ -1,17 +1,9 @@
-const Sequelize = require('sequelize');
-
-const sequelize = new Sequelize('postgres', 'postgres', 'postgres', {
-    host: 'localhost',
-    dialect: 'postgres',
-    operatorsAliases: false,
-    schema: 'public',
-
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
-    }
+const {MongoClient} = require('mongodb');
+const uri =
+    'mongodb+srv://vvyshyvan:Valyan0_BooK1ng@valyano.xug1b.mongodb.net/valyano_booking?retryWrites=true&w=majority';
+const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 });
 
-module.exports = sequelize;
+module.exports = client;
