@@ -6,9 +6,9 @@ import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/
 import 'react-awesome-slider/dist/styles.css';
 import './MainInfoContainer.scss';
 
-import mainImage1 from '../../images/defaultBcg.jpeg';
-import mainImage2 from '../../images/hotel_main_image_1.jpg';
-import mainImage3 from '../../images/hotel_main_image_2.jpg';
+import mainImage1 from '../../images/main-image-1.jpeg';
+import mainImage2 from '../../images/main-image-2.gif';
+import mainImage3 from '../../images/main-image-3.jpeg';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 

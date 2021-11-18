@@ -20,7 +20,7 @@ const Services = () => {
             icon: <FaShuttleVan />,
             title: 'Free Shuttle',
             info:
-                'Our company offers you free shuttle from the airport to our appartments, as well as to our beautiful central city. For a small fee you can also travel where you need within the city.'
+                'Our company offers you free shuttle from the airport to our apartments, as well as to our beautiful central city. For a small fee you can also travel where you need within the city.'
         },
         {
             icon: <FaBeer />,

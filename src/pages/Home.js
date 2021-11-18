@@ -12,8 +12,8 @@ const Home = () => {
             <Navbar isHome />
             <MainInfoContainer>
                 <Banner
-                    title="VALYANO HOTEL"
-                    subtitle="very comfortable appartments for a good price"
+                    title="VALYANO APARTMENTS"
+                    subtitle="very comfortable apartments for a good price"
                 >
                     <Link to="/rooms" className="btn-primary">
                         view rooms

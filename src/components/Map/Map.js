@@ -11,6 +11,12 @@ import {Link} from 'react-router-dom';
 import AwesomeSlider from 'react-awesome-slider';
 import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
 import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
+import marker from '../../images/map-violet.png';
+
+const icon = {
+    url: marker,
+    scaledSize: {height: 40, width: 40}
+};
 
 let MyCurrentRoom = {};
 
@@ -36,6 +42,7 @@ function Map() {
                         onClick={() => {
                             setSelectedRoom(room);
                         }}
+                        icon={icon}
                     />
                 );
             })}
@@ -116,7 +123,7 @@ const SingleMap = () => {
     };
     return (
         <GoogleMap defaultZoom={13} defaultCenter={currentCoords}>
-            <Marker position={currentCoords} />
+            <Marker position={currentCoords} icon={icon} />
         </GoogleMap>
     );
 };
