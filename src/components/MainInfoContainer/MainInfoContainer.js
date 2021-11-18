@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useLayoutEffect} from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
@@ -14,27 +14,55 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const images = [mainImage1, mainImage2, mainImage3];
 
+function useWindowWidth() {
+    const [width, setWidth] = useState(0);
+    useLayoutEffect(() => {
+        function updateWidth() {
+            setWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', updateWidth);
+        updateWidth();
+        return () => window.removeEventListener('resize', updateWidth);
+    }, []);
+
+    return width;
+}
+
 const MainInfoContainer = ({children, className = 'defaultContainer'}) => {
+    const width = useWindowWidth();
+
+    if (width >= 600) {
+        return (
+            <div id="main-container">
+                <AutoplaySlider
+                    play={true}
+                    cancelOnInteraction={false} // should stop playing on user interaction
+                    interval={3000}
+                    bullets={false}
+                    organicArrows={false}
+                    className="aws-btn-main"
+                    animation="foldOutAnimation"
+                    cssModule={[CoreStyles, AnimationStyles]}
+                >
+                    {images.map((image, index) => {
+                        return (
+                            <div key={index} data-src={image}>
+                                <header className={className}>
+                                    {children}
+                                </header>
+                            </div>
+                        );
+                    })}
+                </AutoplaySlider>
+            </div>
+        );
+    }
+
     return (
         <div id="main-container">
-            <AutoplaySlider
-                play={true}
-                cancelOnInteraction={false} // should stop playing on user interaction
-                interval={3000}
-                bullets={false}
-                organicArrows={false}
-                className="aws-btn-main"
-                animation="foldOutAnimation"
-                cssModule={[CoreStyles, AnimationStyles]}
-            >
-                {images.map((image, index) => {
-                    return (
-                        <div key={index} data-src={image}>
-                            <header className={className}>{children}</header>
-                        </div>
-                    );
-                })}
-            </AutoplaySlider>
+            <div>
+                <header className={className}>{children}</header>
+            </div>
         </div>
     );
 };

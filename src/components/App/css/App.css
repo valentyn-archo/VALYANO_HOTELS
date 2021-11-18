@@ -211,6 +211,33 @@ h6 {
     font-size: 3rem;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #rooms-container {
+    display: none;
+  }
+
+  #single-room {
+    padding: 2rem 0 0 0 !important;
+  }
+
+  #featured-rooms {
+    padding: 3rem 0 0 0 !important;
+  }
+
+  #services {
+    padding: 1.5rem 0 0 0 !important;
+  }
+
+  #services .section-title div {
+      width: 80%;
+  }
+
+  #services .section-title {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .banner {
     padding: 2rem 6rem;
