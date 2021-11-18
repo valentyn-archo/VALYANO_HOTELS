@@ -236,6 +236,10 @@ h6 {
   #services .section-title {
     margin-bottom: 1.5rem !important;
   }
+
+  .show-nav {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
