@@ -23,6 +23,7 @@ html {
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
 /* globals */
 body {
   padding-top: 66px;
@@ -31,21 +32,25 @@ body {
   font-family: 'open sans';
   line-height: 1.4;
 }
+
 h1 {
   font-weight: 700;
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
+
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
 }
+
 h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
 }
+
 h4 {
   font-size: 1.2em;
   line-height: 1.25;
@@ -61,6 +66,7 @@ h5 {
   font-weight: bold;
   margin-bottom: 1.5em;
 }
+
 h6 {
   font-size: 1em;
   font-weight: bold;
@@ -80,21 +86,27 @@ h6 {
   cursor: pointer;
   font-weight: 500;
 }
-.btn-primary:hover {
-  border: 3px solid rgba(38, 51, 51, 0.8);
-  background: transparent;
-  color: #222;
+
+@media (hover: hover) {
+  .btn-primary:hover {
+    border: 3px solid rgba(38, 51, 51, 0.8);
+    background: transparent;
+    color: #222;
+  }
 }
+
 .loading {
   text-transform: capitalize;
   text-align: center;
   margin-top: 3rem;
 }
+
 .error {
   text-align: center;
   text-transform: uppercase;
   margin: 2rem 0;
 }
+
 .empty-search {
   text-align: center;
   text-transform: capitalize;
@@ -102,6 +114,7 @@ h6 {
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
+
 /* end of globals */
 /* Navbar */
 .navbar {
@@ -113,26 +126,31 @@ h6 {
   background: var(--mainWhite);
   z-index: 100000;
 }
+
 .nav-header {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
+
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
+
 .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 } 
+
 .nav-links a {
   display: block;
   text-decoration: none;
@@ -144,6 +162,7 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
+
 .nav-links a:hover {
   color: var(--primaryColor);
 }
@@ -151,6 +170,7 @@ h6 {
 .show-nav {
   height: 100px;
 }
+
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
@@ -180,7 +200,7 @@ h6 {
 }
 /* Banner */
 .banner {
-  display: inline-block;
+  display: block;
   background: white;
   color: var(--mainBlack);
   padding: 2rem 1rem;
@@ -188,7 +208,6 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   border-radius: 3px;
-  /* width: 50vw; */
 }
 
 .banner h1 {
@@ -208,14 +227,6 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-  .banner {
-    width: 100%;
-  }
-
-  .banner div {
-    width: auto;
-  }
-
   #rooms-container {
     display: none;
   }
@@ -659,7 +670,6 @@ h6 {
 }
 
 .single-info-image {
-  width: 220px;
   height: 126px;
   margin-bottom: 10px;
 }
@@ -670,7 +680,7 @@ h6 {
   margin-top: 3px;
 }
 .info-img-container img {
-  width: auto;
+  width: 100%;
   display: block;
   transition: var(--mainTransition);
 }
