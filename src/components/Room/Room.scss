@@ -10,6 +10,11 @@
     --control-button-background: transparent;
     --loader-bar-color: transparent;
     --loader-bar-height: 1px;
+    visibility: hidden;
+}
+
+.aws-btn:hover {
+    visibility: visible;
 }
 
 .map-btn {

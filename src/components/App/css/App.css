@@ -670,6 +670,7 @@ h6 {
 }
 
 .single-info-image {
+  width: 220px;
   height: 126px;
   margin-bottom: 10px;
 }
