@@ -20,7 +20,7 @@ const Room = ({room}) => {
                         <p>per night</p>
                     </div>
                     <Link
-                        to={`/rooms/${slug}`}
+                        to={`/apartments/${slug}`}
                         className="btn-primary room-link"
                     >
                         Features
@@ -42,7 +42,7 @@ const Room = ({room}) => {
                                         <p>per night</p>
                                     </div>
                                     <Link
-                                        to={`/rooms/${slug}`}
+                                        to={`/apartments/${slug}`}
                                         className="btn-primary room-link"
                                     >
                                         Features

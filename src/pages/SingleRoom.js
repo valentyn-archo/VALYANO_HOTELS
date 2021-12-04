@@ -30,7 +30,7 @@ const SingleRoom = (props) => {
         return (
             <div className="error">
                 <h3>apartment not found.</h3>
-                <Link to="/rooms" className="btn-primary">
+                <Link to="/apartments" className="btn-primary">
                     back to apartments
                 </Link>
             </div>
@@ -42,7 +42,7 @@ const SingleRoom = (props) => {
             <Navbar isSingleRoom />
             <MainInfoContainer>
                 <Banner title={`${name} room`}>
-                    <Link to="/rooms" className="btn-primary">
+                    <Link to="/apartments" className="btn-primary">
                         back to apartments
                     </Link>
                 </Banner>
