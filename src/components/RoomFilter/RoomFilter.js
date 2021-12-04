@@ -49,7 +49,7 @@ const RoomFilter = ({rooms}) => {
             <form className="filter-form">
                 {/* select type */}
                 <div className="form-group">
-                    <label htmlFor="type">room type</label>
+                    <label htmlFor="type">apartment type</label>
                     <select
                         name="type"
                         id="type"
@@ -75,9 +75,9 @@ const RoomFilter = ({rooms}) => {
                     </select>
                 </div>
                 {/* end guests */}
-                {/* room price */}
+                {/* apartment price */}
                 <div className="form-group">
-                    <label htmlFor="price">room price up to ${price}</label>
+                    <label htmlFor="price">price up to ${price}</label>
                     <input
                         type="range"
                         name="price"
@@ -89,10 +89,10 @@ const RoomFilter = ({rooms}) => {
                         className="form-control"
                     />
                 </div>
-                {/* end room price */}
+                {/* end apartment price */}
                 {/* size */}
                 <div className="form-group">
-                    <label htmlFor="size">room size</label>
+                    <label htmlFor="size">apartment size</label>
                     <div className="size-inputs">
                         <input
                             type="number"
