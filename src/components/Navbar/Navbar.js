@@ -39,7 +39,7 @@ const Navbar = ({isHome, isRooms, isSingleRoom}) => {
                             <a href="#services">Services</a>
                         </li>
                         <li>
-                            <Link to="/rooms">Rooms</Link>
+                            <Link to="/rooms">Apartments</Link>
                         </li>
                         <li>
                             <a href="#featured-rooms">Featured</a>
@@ -62,7 +62,7 @@ const Navbar = ({isHome, isRooms, isSingleRoom}) => {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/rooms">Rooms</Link>
+                            <Link to="/rooms">Apartments</Link>
                         </li>
                         <li>
                             <a href="#single-room">Info</a>
