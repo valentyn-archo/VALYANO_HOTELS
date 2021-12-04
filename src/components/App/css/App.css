@@ -248,6 +248,28 @@ h6 {
   .show-nav {
     height: auto;
   }
+
+  .nav-header a img {
+    width: 200px !important;
+  }
+
+  .navbar {
+    padding: 1.04rem 2rem 0.75rem;
+  }
+
+  .featured-rooms-center {
+    grid-template-columns: none !important;
+  }
+
+  .room-info {
+    padding: 0rem 0 1.5rem 0 !important;
+    margin-top: 10px;
+    bottom: 0 !important;
+  }
+
+  .img-container {
+    position: initial !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -584,6 +606,7 @@ h6 {
   width: 100%;
   background: white;
   font-size: 1rem;
+  color: black;
 }
 .size-inputs {
   display: flex;
@@ -722,7 +745,6 @@ h6 {
     }
 
     .roomslist-center {
-      width: 80%;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(1, minmax(270px, 1fr));
@@ -732,7 +754,7 @@ h6 {
 
     .mapContainer{
       height: 400px;
-      padding: 20px;
+      padding: 6px;
     }
 
     .single-room-images {
