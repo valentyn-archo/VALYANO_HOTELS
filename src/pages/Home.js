@@ -15,7 +15,7 @@ const Home = () => {
                     title="VALYANO APARTMENTS"
                     subtitle="very comfortable apartments for a good price"
                 >
-                    <Link to="/rooms" className="btn-primary">
+                    <Link to="/apartments" className="btn-primary">
                         view apartments
                     </Link>
                 </Banner>

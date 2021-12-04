@@ -70,7 +70,7 @@ function Map() {
                                     <p>per night</p>
                                 </div>
                                 <Link
-                                    to={`/rooms/${selectedRoom.slug}`}
+                                    to={`/apartments/${selectedRoom.slug}`}
                                     className="btn-primary info-room-link"
                                 >
                                     Features
@@ -97,7 +97,7 @@ function Map() {
                                                     <p>per night</p>
                                                 </div>
                                                 <Link
-                                                    to={`/rooms/${selectedRoom.slug}`}
+                                                    to={`/apartments/${selectedRoom.slug}`}
                                                     className="btn-primary info-room-link"
                                                 >
                                                     Features

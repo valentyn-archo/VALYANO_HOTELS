@@ -190,15 +190,18 @@ h6 {
   border-radius: 3px;
   /* width: 50vw; */
 }
+
 .banner h1 {
   font-size: 1.5rem;
 }
+
 .banner div {
   width: 26rem;
   height: 5px;
   background: var(--primaryColor);
   margin: 1.7rem auto;
 }
+
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -264,7 +267,7 @@ h6 {
   }
 
   .gm-style-iw-c {
-    max-width: 250px !important;
+    max-width: 100% !important;
   }
 
   .section-title h4 {
@@ -577,6 +580,7 @@ h6 {
 @media screen and (min-width: 992px) {
   .roomslist-center {
     max-width: 1170px;
+    margin-bottom: 30px !important;
   }
 }
 /* end of roomlist */
@@ -725,7 +729,7 @@ h6 {
 /* end of info window */
 
 /* map */
-.mapContainer{
+.mapContainer {
   height: 1000px;
 }
 /* end map */
@@ -757,7 +761,7 @@ h6 {
       grid-column-gap: 30px;
     }
 
-    .mapContainer{
+    .mapContainer {
       height: 400px;
       padding: 6px;
     }
@@ -788,10 +792,10 @@ h6 {
     }
 
     .gm-style-iw-c {
-      max-width: 250px !important;
+      max-width: 100% !important;
     }
 
-    .mapContainer{
+    .mapContainer {
       padding: 0 0 0 10px;
     }
 
