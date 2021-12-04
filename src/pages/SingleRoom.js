@@ -5,12 +5,19 @@ import {RoomContext} from '../context/context';
 import MainInfoContainer from '../components/MainInfoContainer/MainInfoContainer';
 import {MySingleMap} from '../components/Map/Map';
 import Navbar from '../components/Navbar/Navbar';
+import {getStorage, saveStorage} from '../utils/localStorage';
 
 const SingleRoom = (props) => {
     const context = useContext(RoomContext);
     const {getRoom} = context;
     const slug = props.match.params.slug;
-    const room = getRoom(slug);
+    let room = getRoom(slug);
+
+    if (room) {
+        saveStorage(props.match.params.slug, room);
+    } else {
+        room = getStorage(props.match.params.slug);
+    }
 
     const {
         name,
