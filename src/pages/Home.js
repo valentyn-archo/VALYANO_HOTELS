@@ -16,7 +16,7 @@ const Home = () => {
                     subtitle="very comfortable apartments for a good price"
                 >
                     <Link to="/rooms" className="btn-primary">
-                        view rooms
+                        view apartments
                     </Link>
                 </Banner>
             </MainInfoContainer>

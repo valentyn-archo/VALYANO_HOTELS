@@ -4,7 +4,7 @@ import Room from '../Room/Room';
 const RoomsList = ({rooms}) => {
     return rooms.length === 0 ? (
         <div className="empty-search">
-            <h3>unfortunately no rooms matched your search</h3>
+            <h3>unfortunately no apartments matched your search</h3>
         </div>
     ) : (
         <section className="roomslist">
